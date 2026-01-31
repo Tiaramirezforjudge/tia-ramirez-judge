@@ -687,7 +687,7 @@
             box-shadow: 0 8px 25px rgba(197, 165, 114, 0.6);
         }
 
-        /* Responsive Design */
+        /* Responsive Design - MOBILE FIXES */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -715,51 +715,248 @@
                 border-bottom: 1px solid rgba(197, 165, 114, 0.3);
             }
 
-            .logo img {
-                height: 80px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero .tagline {
-                font-size: 1.3rem;
-            }
-
-            .hero .subtitle {
+            .nav-links a {
                 font-size: 1.1rem;
             }
 
-            .hero-photo {
-                width: 220px;
-                height: 220px;
+            .logo img {
+                height: 70px;
             }
 
-            .donate-photo {
-                width: 240px;
-                height: 360px;
+            /* HERO SECTION MOBILE */
+            .hero {
+                padding: 4rem 1.5rem 3rem;
+                min-height: 600px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+                margin-bottom: 0.8rem;
+                line-height: 1.2;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.3;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.4;
+            }
+
+            .hero-photo {
+                width: 200px;
+                height: 200px;
+                border: 5px solid #c5a572;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            /* ABOUT SECTION MOBILE */
+            section {
+                padding: 3rem 1.5rem;
             }
 
             section h2 {
-                font-size: 2.2rem;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                line-height: 1.2;
             }
 
             .about-header h2 {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+
+            .about-content {
+                padding: 2rem 1.5rem;
+                border: 2px solid #c5a572;
+            }
+
+            .about-text h3 {
+                font-size: 1.4rem;
+                margin-top: 2rem;
+                margin-bottom: 0.8rem;
+                line-height: 1.3;
+            }
+
+            .about-text h3:first-child {
+                margin-top: 0;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+                line-height: 1.7;
+                text-align: left;
+                margin-bottom: 1.2rem;
+            }
+
+            .call-to-action-box {
+                padding: 2rem 1.5rem;
+                margin-top: 2rem;
+                border: 3px solid #c5a572;
+            }
+
+            .call-to-action-box p {
+                font-size: 1.1rem;
+                line-height: 1.4;
+            }
+
+            /* MARQUEE SECTION MOBILE */
+            .endorsement-marquee-section {
+                padding: 3rem 0;
+            }
+
+            .endorsement-marquee-section h3 {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+                line-height: 1.3;
+            }
+
+            .marquee-container {
+                padding: 2rem 0;
+            }
+
+            .marquee-item {
+                width: 120px;
+                margin: 0 1.5rem;
+            }
+
+            .marquee-photo {
+                width: 100px;
+                height: 100px;
+                font-size: 1.5rem;
+                border: 4px solid #c5a572;
+            }
+
+            .marquee-name {
+                font-size: 0.85rem;
+                line-height: 1.3;
+            }
+
+            .view-all-btn {
+                padding: 0.9rem 2rem;
+                font-size: 1rem;
+            }
+
+            /* DONATE SECTION MOBILE */
+            #donate {
+                padding: 3rem 1.5rem;
+            }
+
+            .donate-photo {
+                width: 220px;
+                height: 330px;
+                border: 4px solid #c5a572;
+            }
+
+            .donate-content {
+                gap: 1.5rem;
+            }
+
+            .donate-content p {
+                font-size: 1.05rem;
+                line-height: 1.6;
+                margin-bottom: 0.5rem;
+            }
+
+            .donate-button {
+                padding: 1rem 2.5rem;
+                font-size: 1.1rem;
+            }
+
+            /* CONTACT SECTION MOBILE */
+            .contact-content {
+                padding: 2rem 1.5rem;
+                border: 2px solid #c5a572;
+            }
+
+            .contact-content p {
+                font-size: 1.05rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+
+            .email-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+
+            /* ENDORSEMENTS PAGE MOBILE */
+            .endorsements-intro {
+                font-size: 1.1rem;
+                line-height: 1.5;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+            }
+
+            .endorsement-card {
+                padding: 2rem 1.5rem;
+                margin-bottom: 2rem;
+                border: 2px solid #c5a572;
+            }
+
+            .endorsement-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.3;
             }
 
             .endorsement-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
 
-            .marquee-item {
-                width: 130px;
+            .endorser {
+                padding: 1.5rem;
             }
 
-            .marquee-photo {
+            .endorser-photo {
                 width: 110px;
                 height: 110px;
+                font-size: 2rem;
+                border: 4px solid #c5a572;
+                margin-bottom: 1rem;
+            }
+
+            .endorser-name {
+                font-size: 1.05rem;
+                line-height: 1.3;
+            }
+
+            .endorser-title {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+            .back-button {
+                padding: 0.9rem 2rem;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            /* FOOTER MOBILE */
+            footer {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-logo img {
+                height: 80px;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+                line-height: 1.4;
             }
         }
     </style>
