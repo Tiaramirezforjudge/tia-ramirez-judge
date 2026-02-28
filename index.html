@@ -585,145 +585,120 @@
         }
 
         /* Full Endorsements Page */
-        .endorsements-page {
-            min-height: 100vh;
-            background: linear-gradient(to bottom, #0f1d3d 0%, #1a1a2e 100%);
-        }
-
-        .endorsements-intro {
-            text-align: center;
-            font-size: 1.4rem;
-            margin-bottom: 3rem;
-            color: #c5a572;
-            font-weight: 600;
-        }
-
-        .endorsement-card {
-            background: rgba(30, 58, 138, 0.25);
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 6px 25px rgba(0,0,0,0.6);
-            margin-bottom: 3rem;
-            border: 3px solid #c5a572;
-        }
-
-        .endorsement-card h3 {
-            color: #c5a572;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            border-bottom: 3px solid #c5a572;
-            padding-bottom: 1rem;
-            font-weight: bold;
-        }
-
-        .endorsement-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .endorser {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            background: rgba(30, 58, 138, 0.3);
-            border-radius: 12px;
-            transition: all 0.3s;
-            border: 2px solid #c5a572;
-        }
-
-        .endorser:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px rgba(197, 165, 114, 0.4);
-            background: rgba(30, 58, 138, 0.4);
-        }
-
-        .endorser-photo {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #1e3a8a 0%, #dc2626 100%);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 2.5rem;
-            border: 5px solid #c5a572;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-        }
-
-        .endorser-name {
-            font-weight: bold;
-            color: #c5a572;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .endorser-title {
-            font-size: 1rem;
-            color: #e8e8e8;
-        }
-
-        .back-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #c5a572 0%, #d4af37 100%);
-            color: #1e3a8a;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-bottom: 3rem;
-            transition: all 0.3s;
-            box-shadow: 0 6px 20px rgba(197, 165, 114, 0.4);
-            border: 3px solid white;
-            font-size: 1.1rem;
-        }
-
-        .back-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(197, 165, 114, 0.6);
-        }
-
-        /* Responsive Design - MOBILE FIXES */
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #f8f9fa;
-                flex-direction: column;
-                padding: 1rem;
-                gap: 0;
-                border-top: 2px solid #c5a572;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                padding: 1rem 0;
-                border-bottom: 1px solid rgba(197, 165, 114, 0.3);
-            }
-
-            .nav-links a {
-                font-size: 1.1rem;
-            }
-
-            .logo img {
-                height: 70px;
-            }
-
+.endorsements-page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f1d3d 0%, #1a1a2e 100%);
+}
+.endorsements-intro {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: #c5a572;
+    font-weight: 600;
+}
+.endorsement-card {
+    background: rgba(30, 58, 138, 0.25);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+    margin-bottom: 3rem;
+    border: 3px solid #c5a572;
+}
+.endorsement-card h3 {
+    color: #c5a572;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 3px solid #c5a572;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.endorsement-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.endorser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 1rem 0.5rem;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(197, 165, 114, 0.2);
+    transition: background 0.2s;
+}
+.endorser:last-child {
+    border-bottom: none;
+}
+.endorser:hover {
+    transform: none;
+    box-shadow: none;
+    background: rgba(197, 165, 114, 0.08);
+}
+.endorser-photo {
+    display: none;
+}
+.endorser-name {
+    font-weight: bold;
+    color: #c5a572;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+}
+.endorser-title {
+    font-size: 0.95rem;
+    color: #e8e8e8;
+}
+.back-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #c5a572 0%, #d4af37 100%);
+    color: #1e3a8a;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    transition: all 0.3s;
+    box-shadow: 0 6px 20px rgba(197, 165, 114, 0.4);
+    border: 3px solid white;
+    font-size: 1.1rem;
+}
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 165, 114, 0.6);
+}
+/* Responsive Design - MOBILE FIXES */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f8f9fa;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;
+        border-top: 2px solid #c5a572;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(197, 165, 114, 0.3);
+    }
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+    .logo img {
+        height: 70px;
+    }
+}
             /* HERO SECTION MOBILE */
             .hero {
                 padding: 4rem 1.5rem 3rem;
