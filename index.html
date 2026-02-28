@@ -1729,7 +1729,7 @@
         <p>P.O. Box 1004 La Mesa CA 91944</p>
     </footer>
 
-    <script>
+<script>
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
             navLinks.classList.toggle('active');
@@ -1743,6 +1743,9 @@
             document.getElementById(pageId).classList.add('active');
             document.getElementById('navLinks').classList.remove('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Update the URL hash
+            window.location.hash = pageId;
             
             return false;
         }
@@ -1758,6 +1761,14 @@
             document.getElementById('navLinks').classList.remove('active');
             return false;
         }
+
+        // On page load, check the hash and go to that page
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && document.getElementById(hash)) {
+                showPage(hash);
+            }
+        });
     </script>
 </body>
 </html>
