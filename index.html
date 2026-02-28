@@ -918,6 +918,41 @@
             }
 
             /* FOOTER MOBILE */
+                    .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .social-badge {
+            display: inline-block;
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 2px solid white;
+        }
+
+        .facebook-badge {
+            background: #1877f2;
+            color: white;
+        }
+
+        .instagram-badge {
+            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+            color: white;
+        }
+
+        .social-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+    </style>
+
             footer {
                 padding: 2rem 1.5rem;
             }
@@ -1381,8 +1416,27 @@
                 </p>
                 <a href="mailto:info@tiaramirezforjudge.com?subject=Campaign Inquiry" class="email-button">Send Us an Email</a>
                 <div class="contact-info">
-                    <p><strong>Email:</strong> tiaramirezforjudge@gmail.com</p>
-                </div>
+    <p><strong>Email:</strong> tiaramirezforjudge@gmail.com</p>
+    <div class="social-links">
+        <div class="social-links">
+    <a href="https://www.facebook.com/profile.php?id=61588598731416&mibextid=wwXIfr" target="_blank" class="social-badge facebook-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="vertical-align:middle; margin-right:8px;">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+        Facebook
+    </a>
+    <a href="https://www.instagram.com/tiaramirezforjudge?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="social-badge instagram-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:8px;">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+        Instagram
+    </a>
+</div>
+    </div>
+</div>
+
             </div>
         </section>
     </div>
