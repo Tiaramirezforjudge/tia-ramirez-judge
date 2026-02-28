@@ -667,7 +667,17 @@
 /* Responsive Design - MOBILE FIXES */
 @media (max-width: 600px) {
     .endorsement-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+    .endorser {
+        padding: 0.7rem 0.8rem;
+    }
+    .endorser-name {
+        font-size: 0.85rem;
+    }
+    .endorser-title {
+        font-size: 0.75rem;
     }
 }
     .menu-toggle {
